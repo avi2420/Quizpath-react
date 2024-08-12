@@ -1,0 +1,148 @@
+/* Existing styles... */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color:  #e94f4e;
+}
+
+.navbar-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    background: transparent;
+    margin-left: 200px;
+}
+
+.navbar-auth {
+    flex: 1;
+    text-align: right;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-login.scrolled {
+    color: white;
+}
+
+.btn-Signup {
+    background-color: #e94f4e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    margin-right: 180px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-Signup.scrolled {
+    background-color: white;
+    color: #e94f4e;
+}
+
+.navbar-toggle {
+    display: block;
+    cursor: pointer;
+    margin-left: 200px;
+    font-size: xx-large;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggle.scrolled {
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color:  #ed2e2e;
+    padding-top: 5px;
+    z-index: 1000;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+    transform: translateX(0); 
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.close-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.sidebar-link:hover {
+    background-color: #fbf7f7;  
+    color: #f02020; 
+}
+ 
+@media (max-width: 768px) {
+    .navbar-auth {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .sidebar .btn-login,
+    .sidebar .btn-Signup {
+        display: block;
+        padding: 10px 20px;
+        font-size: large;
+        background-color: transparent;
+        color: white;
+        text-align: left;
+        border: none;
+    }
+}

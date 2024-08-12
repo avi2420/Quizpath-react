@@ -1,0 +1,29 @@
+.results {
+    padding: 20px;
+    
+  }
+  
+  .results h2 {
+    font-size: 3rem;
+    color: rgb(108, 223, 42);
+    text-decoration: underline;
+  }
+  
+  .results p {
+    font-size: 2.2em;
+    color: rgb(212, 27, 27);
+    margin-top: 20px;
+  }
+  
+  .results a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #e94f4e;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .results a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,41 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-social-media a:hover {
+    color: #1da1f2;  
+}
+
+.footer-contact-info,
+.footer-links,
+.footer-description,
+.footer-copyright {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1da1f2; /* Example color for hover effect */
+}
+
+.footer-description p,
+.footer-contact-info p,
+.footer-copyright p {
+    margin: 5px 0;
+}

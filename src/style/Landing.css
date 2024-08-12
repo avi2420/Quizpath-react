@@ -1,0 +1,362 @@
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+ 
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-out;
+}
+ 
+.content-button {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.content-button:hover {
+  transform: scale(1.05);
+  background-color: #ff7e33;
+}
+
+/* Background animation */
+.container {
+  animation: backgroundAnimation 5s infinite alternate;
+}
+
+
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    margin: 20px;
+    padding: auto;
+  }
+  
+  .content-details {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+
+  }
+  
+  .content-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .content-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .content-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .content-button:hover {
+    background: #0056b3;
+  }
+  
+  .content-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 20px;
+  }
+  
+  /* New styles for video section */
+  .video-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+  }
+  
+  .video-col {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .video-col video {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .text-col {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .text-col h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .text-col p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    gap: 20px; /* Add space between columns */
+  }
+  
+  .content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .content-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content-heading {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .content-paragraph {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .content-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f40505;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content-button:hover {
+    background-color: #ff7e33;
+  }
+ /* New container styles */
+.new-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.new-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the heading bold */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%; /* Make the icons round */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 200px; /* Ensure a fixed width for consistency */
+  height: 200px; /* Ensure a fixed height for consistency */
+  text-align: center;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.icon-text {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold; /* Make the icon text bold */
+}
+
+/* Container for the services section */
+.services-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  max-width: 1500px;
+  text-align: center;
+}
+
+/* Each individual service block */
+.service {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Service icon styling */
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+/* Service heading styling */
+.service-heading {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Service description styling */
+.service-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}

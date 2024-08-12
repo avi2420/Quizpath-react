@@ -1,0 +1,114 @@
+body {
+  background-color: #f5f3f3;
+  font-family: Arial, sans-serif;
+}
+
+.quiz-categories {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #ff69b4;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.header {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #d2a4f6;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-box {
+  background-color: #fff;
+  border-radius: 50%; /* Make the boxes circular */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px; /* Set equal width and height for circles */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.category-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden; /* Ensure the image fits within the circular container */
+  margin-bottom: 10px;
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .category-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .category-image-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .category-name {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .category-image-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-name {
+    font-size: 0.9em;
+  }
+}
